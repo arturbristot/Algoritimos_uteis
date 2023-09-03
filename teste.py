@@ -1,8 +1,6 @@
-def fat(x):
-    if x == 1 :
-        return x
-    else:
-        return x * fat(x-1)
-
-print(fat(3))
-
+import time
+a = input("Digite um número: ")
+b = input("Digite outro número: ")
+c = a + b
+print("a soma é igual a:", c)
+time.sleep(5)
