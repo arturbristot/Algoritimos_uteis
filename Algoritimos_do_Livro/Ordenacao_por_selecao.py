@@ -15,4 +15,7 @@ def ordenacao_por_selecao(lista):
         nvlista.append(lista.pop(menor)) #funcao pop retira da lista o menor valor (para o proximo loop)
     return nvlista
 
-print(ordenacao_por_selecao([5, 3, 6, 2, 10]))
+lista = [5, 3, 6, 2, 10]
+a = (ordenacao_por_selecao(lista))
+print(a)
+print(a[0])

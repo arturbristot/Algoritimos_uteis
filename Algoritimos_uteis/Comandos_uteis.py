@@ -1,6 +1,22 @@
+#receber listas em uma linha só
+'''
+lista = input("Digite uma lista: ").split()
+
+for i in range(len(lista)):
+    lista[i] = int(lista[i])
+print(lista)
+
+'''
+
+#ou apenas
+
+#nums = list(map(int, input().split()))
+#lista = [int(x) for x in input(": ").split()]
+
 #----------------------------------------------------------#
 
 # exemplo basico de recursividade :
+
 def regressiva(n):
     if n < 1:
         return
@@ -43,8 +59,22 @@ def eleminar_repetidos(lista):
 #da de usar para contar quantas vezes um elemento aparece na lista
 
 #----------------------------------------------------------#
+
 #lista = [1, 2, 3, 3, 3, 4, 5, 6, 7, 8, 9, 10]
 #print(lista.count(3))
 #outra forma de verificar quantas vezes o numero 3 repete
+
+#----------------------------------------------------------#
+
+#verifica se o numero é primo:
+def primo(n):
+    contador = 0
+    for i in range(1, n+1):
+        if n%i == 0:
+            contador+=1    
+    if contador == 2:
+        return True
+    else:
+        return False
 
 #----------------------------------------------------------#
