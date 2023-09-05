@@ -21,4 +21,4 @@ def arr_lista(bolas):
     
 bolas = list(map(int, input().split()))
 
-print(arr_lista(bolas))
+print(arr_lista(bolas)) # 2 6 5 8 7 4 2 #==> 4,6,2,5,7,2,8
