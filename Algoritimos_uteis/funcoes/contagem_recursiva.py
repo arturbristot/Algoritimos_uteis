@@ -3,5 +3,6 @@ def regressiva(n):
         return
     else:
         print(n)
-        n = n-1
-        regressiva(n)
+        regressiva(n-1)
+
+print(regressiva(19))
